@@ -1,0 +1,10 @@
+Home service locator
+
+This is a single page web app .
+
+The first page as home.html. this displays the list of service providers.
+one can book a service provider here with a bookingModal.
+
+The requestsPage.html displays all the active requests where they can be accepted, rejected, closed or cancelled.
+
+
