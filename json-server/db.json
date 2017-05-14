@@ -1,0 +1,170 @@
+{
+	"users" : [		
+		{
+			"id": "1",
+			"userFname": "Alex",
+			"userLname":"Conner",
+			"image": "images/profile.png",
+			"streetAddress": "CentralBahnstrasse 3",
+			"city": "Basel",
+			"postalCode": "4051",
+			"country": "Switzerland",
+			"emailAddress": "AC@gmail.com",
+			"password": "Alex",
+			"phoneNumber": "+799469874",
+			"profileType": "S",
+			"status": "A",
+			"companyName": "AC Maler AG",
+			"companyStreetAddress": "CentralBahnstrasse 3",
+			"companyCity": "Basel",
+			"companyPostalCode": "4051",
+			"companyCountry": "Switzerland",
+			"companyPhoneNumber": "+654789321",
+			"description": "The AG company.",
+			"hourlyRate": "10.00",
+			"availibilityStatus": "A",
+			"custRating": 3,
+			"serviceProvided": "Plumber",
+			 "comments": [
+			   {
+				   "rating":5,
+				   "comment":"Imagine all the eatables, living in conFusion!",
+				   "author":"John Lemon",
+				   "date":"2016-10-16T17:57:28.556094Z"
+			   },
+			   {
+				   "rating":4,
+				   "comment":"Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+				   "author":"Paul McVites",
+				   "date":"2016-09-05T17:57:28.556094Z"
+			   },
+			   {
+				   "rating":3,
+				   "comment":"Eat it, just eat it!",
+				   "author":"Michael Jaikishan",
+				   "date":"2017-02-13T17:57:28.556094Z"
+			   }                                                   ]
+		},
+		{
+			"id": "2",
+			"userFname": "Simon",
+			"userLname":"Puhar",
+			"image": "images/profile.png",
+			"streetAddress": "Claragraben 31",
+			"city": "Basel",
+			"postalCode": "4058",
+			"country": "Switzerland",
+			"emailAddress": "SP@gmail.com",
+			"password": "sp",
+			"phoneNumber": "+321456987",
+			"profileType": "S",
+			"status": "A",
+			"companyName": "SP Housekeeping",
+			"companyStreetAddress": "Claragraben 31",
+			"companyCity": "Basel",
+			"companyPostalCode": "4058",
+			"companyCountry": "Switzerland",
+			"companyPhoneNumber": "+321456987",
+			"description": "Complete Housekeeping solution for you",
+			"hourlyRate": "15.00",
+			"availibilityStatus": "A",
+			"custRating": 4,
+			"serviceProvided": "Gardener",
+			"comments": [
+			   {
+				   "rating":5,
+				   "comment":"Imagine all the work, living in conFusion no more!",
+				   "author":"John lelon",
+				   "date":"2012-10-16T17:57:28.556094Z"
+			   }                                           ]
+		},
+		{
+			"id": "3",
+			"userFname": "Mattew",
+			"userLname":"Heree",
+			"image": "images/profile.png",
+			"streetAddress": "Hammerstrasse 177",
+			"city": "Basel",
+			"postalCode": "4057",
+			"country": "Switzerland",
+			"emailAddress": "mh@gmail.com",
+			"password": "mh",
+			"phoneNumber": "+56321456321",
+			"profileType": "S",
+			"status": "A",
+			"companyName": "Mattew AG",
+			"companyStreetAddress": "Hammerstrasse 177",
+			"companyCity": "Basel",
+			"companyPostalCode": "4057",
+			"companyCountry": "Switzerland",
+			"companyPhoneNumber": "+654123698",
+			"description": "gardening helper",
+			"hourlyRate": "20.00",
+			"availibilityStatus": "A",
+			"custRating": 2.5,
+		   "serviceProvided": "Gardener",
+			"comments": [
+			   {
+				   "rating":2,
+				   "comment":"It's your birthday, we're gonna party!",
+				   "author":"25 Cent",
+				   "date":"2016-12-02T17:57:28.556094Z"
+			   }                                                          ]
+		}
+
+	],
+	"bookingRequests" : [
+		{
+				"id": "1",
+				"custUserid": "1",
+				"spUserid": "2",
+				"reqType": "E",
+				"reqTime": "2017-04-05T17:57:28.556094Z",
+				"status": "P",
+				"desc": "work desc",
+				"referenceRequestId": "",
+				"reqUpdateTime": "2017-04-05T17:57:28.556094Z",
+				"feedback": "good work",
+				"custRating": "3"
+			},
+			{
+				"id": "2",
+				"custUserid": "1",
+				"spUserid": "3",
+				"reqType": "E",
+				"reqTime": "2017-04-05T17:57:28.556094Z",
+				"status": "A",
+				"desc": "work desc",
+				"referenceRequestId": "",
+				"reqUpdateTime": "2017-04-05T17:57:28.556094Z",
+				"feedback": "good work",
+				"custRating": "3"
+			},
+			{
+				"id": "3",
+				"custUserid": "3",
+				"spUserid": "1",
+				"reqType": "B",
+				"reqTime": "2017-04-06T17:57:28.556094Z",
+				"status": "R",
+				"desc": "work desc",
+				"referenceRequestId": "",
+				"reqUpdateTime": "2017-04-05T17:57:28.556094Z",
+				"feedback": "good work",
+				"custRating": "3"
+			},
+			{
+				"id": "4",
+				"custUserid": "3",
+				"spUserid": "2",
+				"reqType": "B",
+				"reqTime": "2017-04-06T17:57:28.556094Z",
+				"status": "C",
+				"desc": "work desc",
+				"referenceRequestId": "",
+				"reqUpdateTime": "2017-04-05T17:57:28.556094Z",
+				"feedback": "good work",
+				"custRating": "3"
+			}
+	]
+}
