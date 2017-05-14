@@ -1,0 +1,78 @@
+<div class="container-fluid">
+		<div class="row row-content">
+			<div class="col-md-10 col-md-offset-1">
+				<h5>Active Requests as Customer</h5>
+				
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+						  <tr>
+							<th>Service Provider</th>
+							<th>Request Time</th>
+							<th>Status</th>
+							<th>Details</th>
+							<th>Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr ng-repeat="custReq in custActiveRequests({custid: 1})">
+							<td>{{custReq.spUserid}}</td>
+							<td>{{custReq.reqTime | date}}</td>
+							<td>{{custReq.status}}</td>
+							<td>{{custReq.desc}}</td>
+							<td>
+								<button class="btn btn-danger">Cancel</button>
+								<button class="btn btn-success">Close</button>
+							  </td>						
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<hr>
+				
+				<h5>Active Requests as Service Provider</h5>
+				
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead>
+						 <tr>
+							<th>Customer</th>
+							<th>Request Time</th>
+							<th>Status</th>
+							<th>Details</th>
+							<th>Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr ng-repeat="custReq in custActiveRequests({SPId:1})">
+							<td>{{custReq.spUserid}}</td>
+							<td>{{custReq.reqTime}}</td>
+							<td>{{custReq.status}}</td>
+							<td>{{custReq.desc}}</td>
+							<td>
+								<button class="btn btn-success">Accept</button>
+								<button class="btn btn-danger">Reject</button>
+								<button class="btn btn-primary">Close</button>
+							  </td>						
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>-->
+   <script src="../scripts/app.js"></script>
+    <script src="../scripts/services.js"></script>
+	<script src="../scripts/controllers.js"></script>
+	<script src="../scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="../scripts/angular-resource/angular-resource.min.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>

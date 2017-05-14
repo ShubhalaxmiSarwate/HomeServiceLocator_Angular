@@ -1,0 +1,127 @@
+	<div class="container-fluid">
+		<div class="row">		
+				<h4>{{serviceProvider.companyName}} - <span class="label label-primary">{{serviceProvider.custRating}} Stars</span><span class="label label-danger">Hourly price: 9.99$</span></h4>
+				<h5>{{serviceProvider.regCompanyStreetAddress}}<br>{{serviceProvider.regCompanyCity}}&nbsp;{{serviceProvider.regCompanyPostalCode}}, {{serviceProvider.regCompanyCountry}}</h5>
+				<h5>{{serviceProvider.serviceProvided}}</h5>								
+		</div>
+		<div class="row">
+			<p>Please select the desired date and time from the calendar given below. Please give atleast 24 hrs to the service provider to confirm with your request.</p>
+		</div>
+		<div class="row">
+		
+			<div class="col-sm-3">
+				<form>
+					Please select a date to check the availibility
+					<input type="date" name="jobDt"><br>
+					<button type="button" class="btn btn-primary">Check available time</button>
+				</form>
+			</div>
+			<div class="col-sm-3">
+				<form>
+				<table class="table table-hover table-condensed">
+				<thead>
+					<tr>
+						<th>Time Slot
+						</th>
+						<th>Availibility
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>8 am - 9 am</td>
+						<td style="background: red"></td>
+					</tr>
+					<tr>
+						<td>9 am - 10 am</td>
+						<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>	
+						</td>
+<!--						<button class="btn btn-info">available</button>-->
+					</tr>
+					<tr>
+						<td>10 am - 11 am</td>
+						<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>				
+						</td>
+					</tr>
+					<tr>
+						<td>11 am - 12  pm</td>
+						<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>12 pm - 1 pm</td>
+						<td style="background: grey"></td>
+					</tr>
+					<tr>
+						<td>1 pm - 2 pm</td>
+						<td style="background: red"></td>
+					</tr>
+					<tr>
+						<td>2 pm - 3 pm</td>
+						<td>
+						<div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>3 pm - 4 pm</td>
+						<td><div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>	</td>
+					</tr>
+					<tr>
+						<td>4 pm - 5 pm</td>
+						<td><div class="checkbox">
+							  <label><input type="checkbox" value="dtntime">available</label>
+							</div>	</td>
+					</tr>
+					<tr>
+						<td>5 pm - 6 pm</td>
+						<td style="background: red"></td>
+					</tr>
+					<tr>
+						<td>6 pm - 7 pm</td>
+						<td style="background: red"></td>
+					</tr>
+					
+				</tbody>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6 col-md-offset-1 form-group">
+			<!--input box to provide the job description.-->
+			  <label for="jobDesc">Job description:</label>
+			  <textarea class="form-control" rows="5" id="jobDesc"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<br>
+			<div class="col-md-6 col-md-offset-1 form-group">
+			<button type="button" class="btn btn-success">Book Service</button>
+			<button type="button" class="btn btn-primary">Back</button>
+			</div>
+		</div>
+	</div>
+    <footer>
+
+    </footer>
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
