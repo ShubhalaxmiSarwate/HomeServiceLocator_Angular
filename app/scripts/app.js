@@ -14,9 +14,6 @@ angular.module('ServiceLocatorApp', ['ui.router','ngResource'])
                     'content': {
                         templateUrl : 'views/home.html',
                         controller  : 'UserController'
-                    },
-                    'footer': {
-                        templateUrl : 'views/footer.html'
                     }
                 }
 
